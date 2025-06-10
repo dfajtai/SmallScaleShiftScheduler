@@ -1,4 +1,4 @@
-package com.s4.small_scale_shift_scheduler;
+package com.ssss.smallScaleShiftScheduler;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
