@@ -1,0 +1,30 @@
+├── controller/    # REST API végpontok (pl. EmployeeController)
+├── service/       # Üzleti logika (pl. EmployeeService)
+├── repository/    # Adat-hozzáférés, JPA/DAO (pl. EmployeeRepository)
+├── model/         # Adatmodellek, entitások (pl. Employee)
+├── dto/           # DTO-k (ha használsz)
+├── config/        # Konfigurációk (biztonság, Swagger, stb.)
+├── exception/     # Egyedi kivételek, hibakezelés
+├── util/          # Segédosztályok
+└── Application.java # Fő indítóosztály
+
+
+src/main/java/com/ssss/smallScaleShiftScheduler/
+│
+├── controller/    # API végpontok (REST kontrollerek)
+│   └── EmployeeController.java
+│
+├── service/       # Üzleti logika
+│   └── EmployeeService.java
+│
+├── repository/    # Adat-hozzáférés (JPA repository-k)
+│   └── EmployeeRepository.java
+│
+├── model/         # Entitások (JPA @Entity-k)
+│   └── Employee.java
+│
+├── dto/           # (Opcionális) DTO-k API-hoz
+│
+├── exception/     # (Opcionális) Egyedi kivételek, hibakezelés
+│
+└── SmallScaleShiftSchedulerApplication.java  # Fő indítóosztály
