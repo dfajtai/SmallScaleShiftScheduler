@@ -26,8 +26,14 @@ public class ShiftTemplate {
     @ManyToMany
     @JoinTable(
             name = "shift_qualification",
-            joinColumns = @JoinColumn(name = "shift_id"),
-            inverseJoinColumns = @JoinColumn(name = "employee_id")
+            joinColumns = @JoinColumn(
+                    name = "shift_template_id",
+                    referencedColumnName = "id"
+            ),
+            inverseJoinColumns = @JoinColumn(
+                    name = "employee_id",
+                    referencedColumnName = "id"
+            )
     )
     private Set<Employee> qualifiedEmployees = new HashSet<>();
 
